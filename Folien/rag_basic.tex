@@ -1,0 +1,137 @@
+\documentclass[lecture, orange, autotoc, toc=fancy, indicatelastpageofframe, footlinebox, ignoremetaot]{rag_basic}
+\usepackage{svg}
+% OTHAWbeamer supports the following arguments
+% + aspectratio=X              Sets aspect ratio of presentation [default: aspectratio=169]
+% + lecture                    Adds subtitle to footer
+% + amberg                     Title page with Amberg campus
+% + weiden                     Title page with Weiden campus
+% + amwen                      Title page with both campuses
+% + white                      Title page with no picture [default]
+% + orange                     Title page with orange bar
+% + titleshapes                Show shapes on title page [default]
+% + notitleshapes              No shapes on title page
+% + thankyoushapes             Show shapes on thank you page [default]
+% + nothankyoushapes           No shapes on thank you page
+% + breakshapes                Show shapes on break page [default]
+% + nobreakshapes              No shapes on break page
+% + shapes                     Shortcut for titleshapes, thankyoushapes, breakshapes
+% + noshapes                   Shortcut for notitleshapes, nothankyoushapes, nobreakshapes
+% + annotate                   Show annotation/erlaeuterung environments
+% + indicatelastpageofframe    Colorizes frame counter on the last page of each frame (useful for presentations with many animations)
+% + autotoc                    Automatic table of contents at start of new sections
+% + noautotoc                  Disable automatic table of contents at start of new sections [default]
+% + toc=normal                 Single-column corporate design table of contents [default]
+% + toc=twocolumn              Two-column corporate design table of contents (use when there are five or more sections)
+% + toc=fancy                  Fancier table of contents with support for (sub)subsections
+% + toc=cdstyle                Use corporate design TOC colors & styles (default)
+% + toc=altstyle               Use slightly modified TOC colors & styles
+% + toc=legacy                 Disable all new table of content features and use the previous style
+% + squeezetoc                 Change beamer internals to make all table of contents more compact (use when there are five or more sections per column)
+% + nosqueezetoc               Do not try to make table of contents more compact [default]
+% + nometaot                   Disable MetaOT corporate design font (required if you have no access to TTF files or using pdf(La)TeX)
+% + ignoremetaot               Disables error messages regarding MetaOT font
+% + condensedmetaot            When not disabled, loads condensed version of MetaOT font
+% + notes                      Generate handouts
+% + notes=withautotoc          Generate handouts with automatic table of contents
+% + notes=withsquaredgrid      Generate A4-handouts with squared grids below each frame
+% + footlinebox                Add a colored box behind the footline text
+% + numberstyle=old            Old style of numbers with 3, 4, 5, 7, 9 dipping below baseline (only LuaLaTex/XeTeX)
+% + numberstyle=inline         New style of numbers where every digit is the same height (only LuaLaTex/XeTeX)
+% + numberstyle=pageref-inline Old style of numbers, except in page numbering (bottom right) to avoid a "jumping" footline [default] (only LuaLaTex/XeTeX)
+
+\AtBeginDocument{%
+    \selectlanguage{ngerman} % ngerman, english
+}
+
+\title{Claude Code}
+\subtitle{Vibe Coding mit Claude Code - Möglichkeiten und Grenzen}
+\author{Jonas Konzack}
+\place{Amberg}
+\date{\today}
+%\faculty{EMI} % optional
+%\copyrightby{Jonas Konzack} % optional
+
+% contact information; everything is optional and shown on contactframe and thankyouframe
+%\email{j.konzack@oth-aw.de}
+%\institution{Ostbayerische Technische Hochschule (OTH) Amberg-Weiden}
+%\address{Kaiser-Wilhelm-Ring 23 | 92224 Amberg}
+%\telephone{+49 (9621) 482-0}
+%\fax{+49 (9621) 482-1}
+
+% more contact information; everything is optional and shown on contactframe
+%\photo{images/erikamustermann.png}
+%\position{Head of Faculty}
+
+% add a custom logo to title page
+% \additionaltitlelogo{images/logo-color.pdf}
+
+% special option explained later
+\def\indicatelastpageofframeminpages{1}
+
+\begin{document}
+\maketitle
+
+\inserttoc
+
+\section{Was ist RAG?}
+
+	\subsection{Definition}
+	
+		\begin{frame}
+		    \frametitle{Was ist RAG}
+		    \framesubtitle{Definition}
+		
+		    \begin{columns}[T]
+		        \begin{column}{0.5\textwidth}
+		            \textbf{Was ist das?}
+		            \begin{itemize}
+		                \item blabal
+		            \end{itemize}
+		
+		            \textbf{Kernfunktionen}
+		            \begin{itemize}
+		                \item Dies das
+		            \end{itemize}
+		
+		            
+		        \end{column}
+		        \begin{column}{0.45\textwidth}
+					\begin{figure}[h!]
+						\centering
+						\includegraphics[width=0.8\textwidth]{./image/bsp.pdf}
+						\caption{Einleitendes Beispiel}
+						\label{fig:Einleitendes Beispiel}
+					\end{figure}
+		            
+		           
+		        \end{column}
+		    \end{columns}
+		
+		\end{frame}
+		
+	\subsection{Komponenten}
+	
+
+
+	
+\section{Technische Erklärung}
+	\subsection{Der RAG-Prozess}
+	\subsection{Kerntechnologien}
+	\subsection{Chunkstrategien}
+
+\section{Anwendungsbeispiel}
+
+\section{Moderne Ansätze}
+	
+\begin{frame}
+	\frametitle{Fragen?}
+	\begin{center}
+		\scalebox{2}{Gibt es noch Fragen?}
+	\end{center}
+
+\end{frame}
+
+\begin{thankyouframe}
+\end{thankyouframe}
+
+\end{document}

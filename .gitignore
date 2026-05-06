@@ -1,0 +1,24 @@
+# Folienvorlage ausschließen
+Folien_Vorlage/
+
+# LaTeX Build-Dateien
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+
+# MacOS
+.DS_Store
+
+# Editor-Dateien
+*.swp
+*.swo
+*~
