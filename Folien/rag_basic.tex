@@ -43,9 +43,9 @@
     \selectlanguage{ngerman} % ngerman, english
 }
 
-\title{Claude Code}
-\subtitle{Vibe Coding mit Claude Code - Möglichkeiten und Grenzen}
-\author{Jonas Konzack}
+\title{Retrieval Augmented Generation}
+\subtitle{Wie externes Wissen in Sprachmodelle kommt}
+\author{Jonas Konzack, Sebastian Kleber}
 \place{Amberg}
 \date{\today}
 %\faculty{EMI} % optional
@@ -75,49 +75,103 @@
 
 \section{Was ist RAG?}
 
+	\subsection{Das Problem}
+		\begin{frame}
+			  \frametitle{Was ist RAG}
+			\framesubtitle{Das Problem}
+		\begin{columns}[T]
+			\begin{column}{0.3\textwidth}
+				\textbf{Unternehmen:}
+				\begin{itemize}
+					\item Kostengünstig
+				\end{itemize}
+				
+				\textbf{PrivateGPT:}
+				\begin{itemize}
+					\item Lokal laufen
+				\end{itemize}
+				
+					\textbf{Daten:}
+				\begin{itemize}
+					\item Müssen representiert werden
+				\end{itemize}
+				
+				
+			\end{column}
+			\begin{column}{0.7\textwidth}
+				\begin{figure}[h!]
+					\centering
+					\includegraphics[width=0.7\textheight]{./images/konflikt.pdf}
+					\caption{Einleitendes Beispiel}
+					\label{fig:Einleitendes Beispiel}
+				\end{figure}
+				
+				
+			\end{column}
+		\end{columns}
+	
+	\end{frame}
+
+
 	\subsection{Definition}
 	
 		\begin{frame}
 		    \frametitle{Was ist RAG}
-		    \framesubtitle{Definition}
-		
-		    \begin{columns}[T]
-		        \begin{column}{0.5\textwidth}
-		            \textbf{Was ist das?}
-		            \begin{itemize}
-		                \item blabal
-		            \end{itemize}
-		
-		            \textbf{Kernfunktionen}
-		            \begin{itemize}
-		                \item Dies das
-		            \end{itemize}
-		
-		            
-		        \end{column}
-		        \begin{column}{0.45\textwidth}
-					\begin{figure}[h!]
-						\centering
-						\includegraphics[width=0.8\textwidth]{./image/bsp.pdf}
-						\caption{Einleitendes Beispiel}
-						\label{fig:Einleitendes Beispiel}
-					\end{figure}
-		            
-		           
-		        \end{column}
-		    \end{columns}
-		
+		    \framesubtitle{Überblick}
+	
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=0.8\textwidth]{./images/high_level_view.pdf}
+				\caption{High Level View}
+				\label{fig:High_Level_View}
+			\end{figure}
+
 		\end{frame}
 		
-	\subsection{Komponenten}
 	
-
-
 	
 \section{Technische Erklärung}
-	\subsection{Der RAG-Prozess}
-	\subsection{Kerntechnologien}
-	\subsection{Chunkstrategien}
+	\subsection{Embedding Generierung}
+		\begin{frame}
+			\frametitle{Technische Erklärung}
+			\framesubtitle{Embedding Generierung}
+			
+			\begin{figure}[h!]
+					\centering
+					\includegraphics[width=0.7\textwidth]{./images/Embedding.pdf}
+					\caption{Embedding}
+					\label{fig:Embeddig}
+			\end{figure}
+			
+		\end{frame}
+		
+	\subsection{Similarity Search}
+		\begin{frame}
+			\frametitle{Technische Erklärung}
+			\framesubtitle{Similarity Search}
+			
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=0.9\textheight]{./images/search.pdf}
+				\caption{Similarity Search}
+				\label{fig:similarity_search}
+		\end{figure}
+			
+		\end{frame}
+		
+	\subsection{Request Workflow}
+		\begin{frame}
+			\frametitle{Technische Erklärung}
+			\framesubtitle{Workflow}
+			
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=1.5\textheight]{./images/detailed_view.pdf}
+				\caption{Detailed View}
+				\label{fig:detailed_view}
+			\end{figure}
+		\end{frame}
+
 
 \section{Anwendungsbeispiel}
 
