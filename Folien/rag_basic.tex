@@ -173,9 +173,74 @@
 		\end{frame}
 
 
-\section{Anwendungsbeispiel}
+\section{Anwendungsbeispiele}
+    \subsection{Printerest}
+        \begin{frame}
+            \frametitle{Anwendungsbeispiel - Pinterest}
+            \framesubtitle{RAG zur Tabellen auswahl}
+            
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=0.9\textheight]{./images/Pinterest}
+                \caption{Pinterest - RAG für die Tabellen Auswahl}
+                \label{fig:printerest_overview}
+            \end{figure}
+            \footnotetext[1]{Source: https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff}
+        \end{frame}
+
+    \subsection{DoorDash}
+        \begin{frame}
+            \frametitle{Anwendungsbeispiel - DoorDash}
+            \framesubtitle{RAG für den Delivery support chatbot}
+
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=1.2\textheight]{./images/DoorDash}
+                \caption{DoorDash - RAG als Teil des Support-Systems}
+                \label{fig:doordash_overview}
+            \end{figure}
+            \footnotetext[2]{Source: https://careersatdoordash.com/blog/large-language-modules-based-dasher-support-automation/}
+        \end{frame}
 
 \section{Moderne Ansätze}
+    \subsection{Klassisches vs. modernes RAG}
+    \begin{frame}
+        \frametitle{Moderne Ansätze}
+        \framesubtitle{Klassisches RAG vs. Modernes / Agentic RAG}
+
+        \begin{columns}[T,onlytextwidth]
+            \begin{column}{0.48\textwidth}
+                \begin{block}{Klassisches RAG}
+                    \small
+                    \begin{itemize}
+                        \item Fester Ablauf: \linebreak Anfrage $\rightarrow$ Retrieval $\rightarrow$ Antwort
+                        \item Meist ein Retriever und eine Wissensquelle
+                        \item Vektorbasierte Suche nach ähnlichen Text-Chunks
+                        \item Kontext wird direkt in den Prompt eingefügt
+                        \item Gut für einfache, klar abgegrenzte Wissensfragen
+                    \end{itemize}
+                \end{block}
+            \end{column}
+
+            \begin{column}{0.48\textwidth}
+                \begin{exampleblock}{Modernes / Agentic RAG}
+                    \small
+                    \begin{itemize}
+                        \item Dynamischer Ablauf mit Planung und Routing
+                        \item Mehrere Quellen: Vektorindex, SQL, APIs, Graphen, Memory
+                        \item Query-Rewriting, Hybrid Search und Re-Ranking
+                        \item Validierung, Guardrails und ggf. erneute Suche
+                        \item Gut für komplexe Workflows und Produktionssysteme
+                    \end{itemize}
+                \end{exampleblock}
+            \end{column}
+        \end{columns}
+
+        \vspace{0.35cm}
+        \begin{center}
+            \alert{Kernaussage:} RAG entwickelt sich von einer einzelnen Suche zu einer orchestrierten Wissens-Pipeline.
+        \end{center}
+    \end{frame}
 	
 \begin{frame}
 	\frametitle{Fragen?}
