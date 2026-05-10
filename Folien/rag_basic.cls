@@ -72,7 +72,7 @@
 \@ambergfalse
 
 \newif\if@weiden
-\@ambergfalse
+\@weidenfalse
 
 \newif\if@amwen
 \@amwenfalse

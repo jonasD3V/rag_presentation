@@ -69,141 +69,164 @@
 \def\indicatelastpageofframeminpages{1}
 
 \begin{document}
-\maketitle
+    \maketitle
 
-\inserttoc
+    \inserttoc
 
-\section{Was ist RAG?}
+    \section{Was ist RAG?}
+    \label{sec:introduction}
 
-	\subsection{Das Problem}
-		\begin{frame}
-			  \frametitle{Was ist RAG}
-			\framesubtitle{Das Problem}
-		\begin{columns}[T]
-			\begin{column}{0.3\textwidth}
-				\textbf{Unternehmen:}
-				\begin{itemize}
-					\item Kostengünstig
-				\end{itemize}
-				
-				\textbf{PrivateGPT:}
-				\begin{itemize}
-					\item Lokal laufen
-				\end{itemize}
-				
-					\textbf{Daten:}
-				\begin{itemize}
-					\item Müssen representiert werden
-				\end{itemize}
-				
-				
-			\end{column}
-			\begin{column}{0.7\textwidth}
-				\begin{figure}[h!]
-					\centering
-					\includegraphics[width=0.7\textheight]{./images/konflikt.pdf}
-					\caption{Einleitendes Beispiel}
-					\label{fig:Einleitendes Beispiel}
-				\end{figure}
-				
-				
-			\end{column}
-		\end{columns}
-	
-	\end{frame}
+    \subsection{Das Problem}
+    \label{subsec:rag_problem}
+
+    \begin{frame}
+        \frametitle{Was ist RAG}
+        \framesubtitle{Das Problem}
+        \begin{columns}[T]
+            \begin{column}{0.3\textwidth}
+                \textbf{Unternehmen:}
+                \begin{itemize}
+                    \item Kostengünstig
+                \end{itemize}
+
+                \textbf{PrivateGPT:}
+                \begin{itemize}
+                    \item Lokal laufen
+                \end{itemize}
+
+                \textbf{Daten:}
+                \begin{itemize}
+                    \item Müssen representiert werden
+                \end{itemize}
 
 
-	\subsection{Definition}
-	
-		\begin{frame}
-		    \frametitle{Was ist RAG}
-		    \framesubtitle{Überblick}
-	
-			\begin{figure}[h!]
-				\centering
-				\includegraphics[width=0.8\textwidth]{./images/high_level_view.pdf}
-				\caption{High Level View}
-				\label{fig:High_Level_View}
-			\end{figure}
-
-		\end{frame}
-		
-	
-	
-\section{Technische Erklärung}
-	\subsection{Embedding Generierung}
-		\begin{frame}
-			\frametitle{Technische Erklärung}
-			\framesubtitle{Embedding Generierung}
-			
-			\begin{figure}[h!]
-					\centering
-					\includegraphics[width=0.7\textwidth]{./images/Embedding.pdf}
-					\caption{Embedding}
-					\label{fig:Embeddig}
-			\end{figure}
-			
-		\end{frame}
-		
-	\subsection{Similarity Search}
-		\begin{frame}
-			\frametitle{Technische Erklärung}
-			\framesubtitle{Similarity Search}
-			
-			\begin{figure}[h!]
-				\centering
-				\includegraphics[width=0.9\textheight]{./images/search.pdf}
-				\caption{Similarity Search}
-				\label{fig:similarity_search}
-		\end{figure}
-			
-		\end{frame}
-		
-	\subsection{Request Workflow}
-		\begin{frame}
-			\frametitle{Technische Erklärung}
-			\framesubtitle{Workflow}
-			
-			\begin{figure}[h!]
-				\centering
-				\includegraphics[width=1.5\textheight]{./images/detailed_view.pdf}
-				\caption{Detailed View}
-				\label{fig:detailed_view}
-			\end{figure}
-		\end{frame}
+            \end{column}
+            \begin{column}{0.7\textwidth}
+                \begin{figure}[h!]
+                    \centering
+                    \includegraphics[width=0.7\textheight]{./images/konflikt}
+                    \caption{Einleitendes Beispiel}
+                    \label{fig:Einleitendes Beispiel}
+                \end{figure}
 
 
-\section{Anwendungsbeispiele}
-    \subsection{Printerest}
-        \begin{frame}
-            \frametitle{Anwendungsbeispiel - Pinterest}
-            \framesubtitle{RAG zur Tabellen auswahl}
-            
-            \begin{figure}[h!]
-                \centering
-                \includegraphics[width=0.9\textheight]{./images/Pinterest}
-                \caption{Pinterest - RAG für die Tabellen Auswahl}
-                \label{fig:printerest_overview}
-            \end{figure}
-            \footnotetext[1]{Source: https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff}
-        \end{frame}
+            \end{column}
+        \end{columns}
+
+    \end{frame}
+
+
+    \subsection{Definition}
+    \label{subsec:rag_definition}
+
+    \begin{frame}
+        \frametitle{Was ist RAG}
+        \framesubtitle{Überblick}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.8\textwidth]{./images/high_level_view}
+            \caption{High Level View}
+            \label{fig:High_Level_View}
+        \end{figure}
+
+    \end{frame}
+
+
+
+    \section{Technische Erklärung}
+    \label{sec:technical_explanation}
+    \subsection{Embedding Generierung}
+    \label{subsec:embedding_generation}
+
+    \begin{frame}
+        \frametitle{Technische Erklärung}
+        \framesubtitle{Embedding Generierung}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.7\textwidth]{./images/Embedding}
+            \caption{Embedding}
+            \label{fig:Embeddig}
+        \end{figure}
+
+    \end{frame}
+
+    \subsection{Similarity Search}
+    \label{subsec:similarity_search}
+
+    \begin{frame}
+        \frametitle{Technische Erklärung}
+        \framesubtitle{Similarity Search}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.9\textheight]{./images/search}
+            \caption{Similarity Search}
+            \label{fig:similarity_search}
+        \end{figure}
+
+    \end{frame}
+
+    \subsection{Request Workflow}
+    \label{subsec:request_workflow}
+
+    \begin{frame}
+        \frametitle{Technische Erklärung}
+        \framesubtitle{Workflow}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=1.5\textheight]{./images/detailed_view}
+            \caption{Detailed View}
+            \label{fig:detailed_view}
+        \end{figure}
+    \end{frame}
+
+
+    \section{Anwendungsbeispiele}
+    \label{sec:usecases}
+
+    \subsection{Pinterest}
+    \label{subsec:usecase_pinterest}
+
+    \begin{frame}
+        \frametitle{Anwendungsbeispiel - Pinterest}
+        \framesubtitle{RAG zur Tabellenauswahl}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.9\textheight]{./images/Pinterest}
+            \caption{Pinterest - RAG zur Tabellenauswahl}
+            \label{fig:printerest_overview}
+        \end{figure}
+        \footnotetext[1]{\scriptsize Source: \href{https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff}{How we built Text-to-SQL at Pinterest}}
+    \end{frame}
 
     \subsection{DoorDash}
-        \begin{frame}
-            \frametitle{Anwendungsbeispiel - DoorDash}
-            \framesubtitle{RAG für den Delivery support chatbot}
+    \label{subsec:usecase_doordash}
 
-            \begin{figure}[h!]
-                \centering
-                \includegraphics[width=1.2\textheight]{./images/DoorDash}
-                \caption{DoorDash - RAG als Teil des Support-Systems}
-                \label{fig:doordash_overview}
-            \end{figure}
-            \footnotetext[2]{Source: https://careersatdoordash.com/blog/large-language-modules-based-dasher-support-automation/}
-        \end{frame}
+    \begin{frame}
+        \frametitle{Anwendungsbeispiel - DoorDash}
+        \framesubtitle{RAG für den Delivery support chatbot}
 
-\section{Moderne Ansätze}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=1.2\textheight]{./images/DoorDash}
+            \caption{DoorDash - RAG als Teil des Support-Systems}
+            \label{fig:doordash_overview}
+        \end{figure}
+        \footnotetext[2]{\scriptsize Source: \href{https://careersatdoordash.com/blog/large-language-modules-based-dasher-support-automation/}{Path to high-quality LLM-based Dasher support automation}}
+
+
+    \end{frame}
+
+    \section{Moderne Ansätze}
+    \label{sec:modern_approach}
+
     \subsection{Klassisches vs. modernes RAG}
+    \label{subsec:classic_vs_modern_rag}
+
     \begin{frame}
         \frametitle{Moderne Ansätze}
         \framesubtitle{Klassisches RAG vs. Modernes / Agentic RAG}
@@ -235,22 +258,17 @@
                 \end{exampleblock}
             \end{column}
         \end{columns}
-
-        \vspace{0.35cm}
-        \begin{center}
-            \alert{Kernaussage:} RAG entwickelt sich von einer einzelnen Suche zu einer orchestrierten Wissens-Pipeline.
-        \end{center}
     \end{frame}
-	
-\begin{frame}
-	\frametitle{Fragen?}
-	\begin{center}
-		\scalebox{2}{Gibt es noch Fragen?}
-	\end{center}
 
-\end{frame}
+    \begin{frame}
+        \frametitle{Fragen?}
+        \begin{center}
+            \scalebox{2}{Gibt es noch Fragen?}
+        \end{center}
 
-\begin{thankyouframe}
-\end{thankyouframe}
+    \end{frame}
+
+    \begin{thankyouframe}
+    \end{thankyouframe}
 
 \end{document}
